@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsivo.css">
+
+  <title>Recomeçar Viagens</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <p>Recomeçar Viagens</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#pacotes">Pacotes</a> </li>
+        <li><a href="#servicos">Serviços</a> </li>
+        <li><a href="#contato">Contato</a> </li>
+      </ul>
+    </nav>
+
+    <div id="home" class="header-content">
+      <h1>INTO THE WILD</h1>
+      <p>Experiencia mágica, ilhas paradisíacas, praias lindas, paraísos tropicais. Tudo isso em um dos mais populares sites de viagens. Junte-se a nós nessa jornada. </p>
+      <a href="conteudo.html" class="btn">Saiba mais sobre os pacotes </a>
+    </div>
+  </header>
+
+  <section id="pacotes" class="pacotes">
+    <h1 class="pacotes-title">Conheça nossos Pacotes</h1>
+
+    <div class="pacotes-cards">
+      <div class="card">
+        <div class="card-tag card-tag-top">
+          <p>Promoção</p>
+        </div>
+        <div class="card-tag card-tag-botton">
+          <p>R$ 4500,00</p>
+        </div>
+        <img class="card-image" src="./img/aurora-kreativ-UN4cs4zNCYo-unsplash.jpg" alt="Miami">
+        <div class="card-content">
+          <h1>Pacote 5 noites hotel premium</h1>
+          <ul>
+            <li> <i data-feather="coffee"></i>Café da manhã</li>
+            <li> <i data-feather="wifi"></i>Wifi</li>
+            <li> <i data-feather="briefcase"></i>2 Quartos</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="card-tag card-tag-top">
+          <p>Promoção</p>
+        </div>
+        <div class="card-tag card-tag-botton">
+          <p>R$ 300,00</p>
+        </div>
+        <img class="card-image" src="./img/nikita-karimov-lvJZhHOIJJ4-unsplash.jpg" alt="Russia">
+        <div class="card-content">
+          <h1>Pacote 3 dias na Russia</h1>
+          <ul>
+            <li> <i data-feather="coffee"></i>Café da manhã</li>
+            <li> <i data-feather="wifi"></i>Wifi</li>
+            <li> <i data-feather="briefcase"></i>2 Quartos</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="card-tag card-tag-top">
+          <p>Promoção</p>
+        </div>
+        <div class="card-tag card-tag-botton">
+          <p>R$ 1900,00</p>
+        </div>
+        <img class="card-image" src="./img/david-edelstein-N4DbvTUDikw-unsplash.jpg" alt="Japão">
+        <div class="card-content">
+          <h1>Pacote 8 dias no Japão</h1>
+          <ul>
+            <li> <i data-feather="coffee"></i>Café da manhã</li>
+            <li> <i data-feather="wifi"></i>Wifi</li>
+            <li> <i data-feather="briefcase"></i>2 Quartos</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <h1 class="servicos-title">Serviços</h1>
+    <div class="container-servicos">
+      <div class="card">
+        <i data-feather="map"></i>
+        <div class="card-servicos">
+          <h3>Tours guiados</h3>
+          <p>Os tours guiados são passeios que são realizados com auzilio de um guia, que alem de dar informaçōes sobre o local, vai nos conduzir ao longo do trajeto.</p>
+        </div>
+        <button class="btn-servicos">Saiba mais </button>
+      </div>
+
+      <div class="card">
+        <i data-feather="camera"></i>
+        <div class="card-servicos">
+          <h3>Fotografia profissional</h3>
+          <p>Nossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite a paisagem sem se preocupar.</p>
+        </div>
+        <button class="btn-servicos">Saiba mais </button>
+      </div>
+
+      <div class="card">
+        <i data-feather="navigation"></i>
+        <div class="card-servicos">
+          <h3>Aluguel de veículo</h3>
+          <p>Para os clientes que preferem explorar o ambiente sozinhos e curtem a liberdade, oferecemos o serviço de aluguel de veículo com preços super em conta.</p>
+        </div>
+        <button class="btn-servicos">Saiba mais </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="contato-card">
+      <h1>Entre em contato</h1>
+      <ul>
+        <li><i data-feather="coffee"></i> Rua José Bonifacio, 100</li>
+        <li><i data-feather="coffee"></i> contato@recomecarviagens.com </li>
+        <li><i data-feather="coffee"></i> (41) 99999-5555 </li>
+      </ul>
+    </div>
+    <div id="map"></div>
+
+  </section>
+
+  <script>
+    feather.replace()
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    function initMap() {
+
+      const uluru = { lat: -25.344, lng: 131.036 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: uluru,
+      });
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly" async></script>
+</body>
+
+</html>

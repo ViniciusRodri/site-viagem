@@ -1,0 +1,44 @@
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .contato {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  body {
+    margin-bottom: 55px;
+  }
+
+
+  header nav ul {
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #F06C2E;
+    font-weight: bold;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contato {
+    padding: 20px 0;
+  }
+
+  .contato-card {
+    position: static;
+    margin: 40px auto;
+  }
+
+
+}

@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 2px solid white;
+  color:white;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  height: calc(100vh - 150px);
+  background: url("../img/anders-jilden-cYrMQA7a3Wc-unsplash.jpg") no-repeat center/cover;
+  opacity: 93%;
+  box-shadow: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 30px;
+  color: white;
+}
+
+header nav p {
+  font-weight: bold;
+}
+
+.header-content {
+  text-align: left;
+  max-width: 400px;
+  margin: 100px;
+  font-size: large;
+  color: white;
+}
+
+.header-content h1 {
+  margin-bottom: 10px;
+  font-size: 90px;
+  color: white;
+}
+
+.pacotes {
+  background: white;
+  padding: 15px;
+}
+
+.pacotes-title {
+  width: 100%;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.pacotes-cards {
+  display: flex;
+  margin: auto;
+  max-width: 950px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  background: white;
+  border-radius: 20px 0;
+  margin: 25px; 
+  position: relative;
+}
+
+.card-tag-top {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  background: tomato;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+}
+
+.card-tag p {
+  margin: 0;
+  font-size: .8rem;
+  color: white;
+  font-weight: bold;
+}
+
+.card-tag-botton {
+  position: absolute;
+  left: 0;
+  top: 180px;
+  background: #1D61DD;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+}
+
+
+.card-image {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px 0 0 0;
+  object-fit: cover;
+}
+
+.card-content {  
+  padding: 0 15px;
+}
+
+.card-content h1 {
+  font-size: 1rem;
+}
+
+.card-content ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.card-content li svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.card-content ul li {
+  font-size: .6rem;
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+  color: grey;
+  font-weight: bold;
+}
+
+.container-servicos {
+  padding-top: 25px;
+  display: flex;
+  max-width: 950px;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+
+}
+
+.servicos-title {
+  text-align: center;
+  margin: 35px 0;
+}
+
+.servicos {
+  padding: 15px;
+  background: black;
+  background-size: cover;
+  opacity: 90%;
+  color: white;
+}
+
+.servicos .card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  color: white;
+  background: transparent;
+}
+
+.servicos .card svg {
+  width: 60px;
+  height: 60px;
+  margin: 50px;
+  transition: all 1s;
+  color: white;
+}
+
+.servicos .card svg:hover {
+  stroke: #1D61DD;
+  transform: scale(1.1);
+}
+
+.servicos .card h3 {
+  font-weight: bold;
+}
+
+.servicos .card p {
+  color: rgb(204, 204, 204);
+  font-size: .8rem;
+  text-align: center;
+}
+
+.card-servicos {
+  height: 180px;
+  text-align: center;
+}
+
+.btn-servicos {
+  padding: 9px 20px;
+  border-radius: 3px;
+  border: 2px solid white;
+  color:white;
+  background-color: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.contato {
+  padding: 60px;
+  position: relative;
+}
+
+.contato-card {
+  width: 350px;
+  height: 300px;
+  background: #e4e4e4;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+  position: absolute;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 99;
+  top: calc(50% - 150px);
+  left: calc(20% - 175px);
+}
+
+.contato-card h1 {
+  padding-left: 50px;
+  text-align: left;
+}
+
+.contato-card li {
+  font-size: .8rem;
+  font-weight: bold;
+  color: rgb(153, 153, 153);
+  display: flex;
+  align-items: center;
+}
+
+.contato-card li svg {
+  width: 16px;
+  margin: 10px;
+
+}
